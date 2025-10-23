@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
 
-st.set_page_config(page_title="Comparativo de Simulados", layout="wide")
+st.set_page_config(page_title="Comparativo de Simulados - EJA RJ", layout="wide")
 
 # -------------------- parâmetros de fonte --------------------
 font_size = 18                 # base para opções do rádio, dropdown, eixos, hover e rótulos sobre os pontos
@@ -53,8 +53,8 @@ st.markdown(
 )
 
 # -------------------- arquivos --------------------
-NOTAS_FILE = "Comparativo_Simulados_MG_EJA.xlsx"
-PARTIC_FILE = "Participacao_Simulados_MG_EJA.xlsx"
+NOTAS_FILE = "Comparativo_Simulados_RJ_EJA.xlsx"
+PARTIC_FILE = "Participacao_Simulados_RJ_EJA.xlsx"
 
 AREAS = ["Redação", "Linguagens e Códigos", "Ciências Humanas",
          "Ciências da Natureza", "Matemática"]
@@ -347,6 +347,7 @@ with col_right:
 
     with st.expander("Ver dados da regional selecionada"):
         st.dataframe(df_sel.reset_index(drop=True), use_container_width=True)
+
 
 
 
