@@ -312,11 +312,11 @@ with col_right:
     # Notas — lado a lado
     c1, c2 = st.columns(2, gap="large")
     with c1:
-        st.markdown("<h3 style='text-align:center; margin: 0 0 8px 0;'>2º Ano</h3>",
+        st.markdown("<h3 style='text-align:center; margin: 0 0 8px 0;'>2ª Série</h3>",
                     unsafe_allow_html=True)
         st.plotly_chart(make_line_notas(y2_1, y2_2), use_container_width=True)
     with c2:
-        st.markdown("<h3 style='text-align:center; margin: 0 0 8px 0;'>3º Ano</h3>",
+        st.markdown("<h3 style='text-align:center; margin: 0 0 8px 0;'>3ª Série</h3>",
                     unsafe_allow_html=True)
         st.plotly_chart(make_line_notas(y3_1, y3_2), use_container_width=True)
 
@@ -347,6 +347,7 @@ with col_right:
 
     with st.expander("Ver dados da regional selecionada"):
         st.dataframe(df_sel.reset_index(drop=True), use_container_width=True)
+
 
 
 
